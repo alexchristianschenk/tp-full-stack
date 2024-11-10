@@ -5,9 +5,9 @@ const turnosController = require('../controllers/turnosController');
 // Rutas para los hechizos
 router.get('/', turnosController.getTurnos);
 // router.get('/:id', hechizoController.getHechizoById);
-router.post('/', turnosController.createTurnos);
+// router.post('/', turnosController.createTurnos);
 // router.put('/:id', hechizoController.updateHechizo);
-router.delete('/:id', turnosController.deleteTurnos);
+// router.delete('/:id', turnosController.deleteTurnos);
 
 
 module.exports = router;
