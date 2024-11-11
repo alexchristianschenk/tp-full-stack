@@ -122,7 +122,7 @@ function Formulario() {
         ))}
       </div>
       <div>
-      <h1>Lista de Hechizos</h1>
+      <h1>nuevos datos</h1>
       
     </div>
     
@@ -132,83 +132,85 @@ function Formulario() {
 
 export default Formulario;
 
-<div>
-      <h1>Lista de Hechizos</h1>
-      <Link to="/crear" className="crear-hechizo">Crear nuevo hechizo</Link>
-      <ul>
-        {turnos.map((turno) => (
-          <li key={turno._id}>
-            {turno.nombre} - <Link to={`/turnos/${turno._id}`}>Ver Detalle</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+// <div>
+//       <h1>Lista de Hechizos</h1>
+//       <Link to="/crear" className="crear-hechizo">Crear nuevo hechizo</Link>
+//       <ul>
+//         {turnos.map((turno) => (
+//           <li key={turno._id}>
+//             {turno.nombre} - <Link to={`/turnos/${turno._id}`}>Ver Detalle</Link>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
     
-    <div className="dataContainer">
-        <h3 className="heading">Datos Ingresados</h3>
-        {turnos.map((turno) => (
-          <div key={turno._id} className="dataItem">
-            <p className="dataText">Nombre: {turnos.nombre}</p>
-            <p className="dataText">Fecha: {turnos.fecha}</p>
-            <p className="dataText">Horario: {turnos.horario}</p>
-            <button 
-              className="deleteButton" 
-              onClick={() => handleDelete(index)}>
-              Eliminar
-            </button>
-          </div>
-        ))}
-      </div>
+//     <div className="dataContainer">
+//         <h3 className="heading">Datos Ingresados</h3>
+//         {turnos.map((turno) => (
+//           <div key={turno._id} className="dataItem">
+//             <p className="dataText">Nombre: {turnos.nombre}</p>
+//             <p className="dataText">Fecha: {turnos.fecha}</p>
+//             <p className="dataText">Horario: {turnos.horario}</p>
+//             <button 
+//               className="deleteButton" 
+//               onClick={() => handleDelete(index)}>
+//               Eliminar
+//             </button>
+//           </div>
+//         ))}
+//       </div>
 
-<div className="container">
-      {<Link to="/reservas" /> }
-      <form onSubmit={handleSubmit} className="form">
-        <div className="inputGroup">
-          <label className="label">Nombre:</label>
-          <input
-            type="text"
-            name="nombre"
-            value={formData.nombre}
-            onChange={handleChange}
-            className="input"
-          />
-        </div>
-        <div className="inputGroup">
-          <label className="label">Día:</label>
-          <input
-            type="date"
-            name="dia"
-            value={formData.dia}
-            onChange={handleChange}
-            className="input"
-          />
-        </div>
-        <div className="inputGroup">
-          <label className="label">Horario:</label>
-          <input
-            type="time"
-            name="horario"
-            value={formData.horario}
-            onChange={handleChange}
-            className="input"
-          />
-        </div>
-        <button type="submit" className="button">Reservar</button>
-      </form>
+// <div className="container">
+//       {<Link to="/reservas" /> }
+//       <form onSubmit={handleSubmit} className="form">
+//         <div className="inputGroup">
+//           <label className="label">Nombre:</label>
+//           <input
+//             type="text"
+//             name="nombre"
+//             value={formData.nombre}
+//             onChange={handleChange}
+//             className="input"
+//           />
+//         </div>
+//         <div className="inputGroup">
+//           <label className="label">Día:</label>
+//           <input
+//             type="date"
+//             name="dia"
+//             value={formData.dia}
+//             onChange={handleChange}
+//             className="input"
+//           />
+//         </div>
+//         <div className="inputGroup">
+//           <label className="label">Horario:</label>
+//           <input
+//             type="time"
+//             name="horario"
+//             value={formData.horario}
+//             onChange={handleChange}
+//             className="input"
+//           />
+//         </div>
+//         <button type="submit" className="button">Reservar</button>
+//       </form>
 
-      <div className="dataContainer">
-        <h3 className="heading">Datos Ingresados</h3>
-        {submittedData.map((data, index) => (
-          <div key={index} className="dataItem">
-            <p className="dataText">Nombre: {data.nombre}</p>
-            <p className="dataText">Día: {data.dia}</p>
-            <p className="dataText">Horario: {data.horario}</p>
-            <button 
-              className="deleteButton" 
-              onClick={() => handleDelete(index)}>
-              Eliminar
-            </button>
-          </div>
-        ))}
-      </div>
-    </div>
+//       <div className="dataContainer">
+//         <h3 className="heading">Datos Ingresados</h3>
+//         {submittedData.map((data, index) => (
+//           <div key={index} className="dataItem">
+//             <p className="dataText">Nombre: {data.nombre}</p>
+//             <p className="dataText">Día: {data.dia}</p>
+//             <p className="dataText">Horario: {data.horario}</p>
+//             <button 
+//               className="deleteButton" 
+//               onClick={() => handleDelete(index)}>
+//               Eliminar
+//             </button>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+// G5O8oIH5Yd2Uo2Re
+// mongodb+srv://alexschenk04:G5O8oIH5Yd2Uo2Re@delta-sports.rhq5y.mongodb.net/
